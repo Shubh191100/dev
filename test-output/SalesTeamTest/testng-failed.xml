@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SalesTeamTest]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Com.Cen.Utilities.TestReportListener"/>
+  </listeners>
+  <test name="setUp(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Com.Cen.TestCases.addVacation">
+        <methods>
+          <include name="Edit_Vacation"/>
+          <include name="setUp"/>
+          <include name="click_Usermenu"/>
+          <include name="add_Vacation"/>
+          <include name="verify_invalidEmail"/>
+          <include name="delete_Vacation"/>
+        </methods>
+      </class> <!-- Com.Cen.TestCases.addVacation -->
+    </classes>
+  </test> <!-- setUp(failed) -->
+</suite> <!-- Failed suite [SalesTeamTest] -->

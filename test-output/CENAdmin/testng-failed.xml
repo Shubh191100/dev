@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CENAdmin]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Com.Cen.Utilities.TestReport"/>
+  </listeners>
+  <test name="setUp(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Com.Cen.TestCases.Login_User">
+        <methods>
+          <include name="LoginTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Com.Cen.TestCases.Login_User -->
+    </classes>
+  </test> <!-- setUp(failed) -->
+</suite> <!-- Failed suite [CENAdmin] -->

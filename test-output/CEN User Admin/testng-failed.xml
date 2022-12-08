@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [CEN User Admin]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Com.Cen.Utilities.TestReportListener"/>
+  </listeners>
+  <test parallel="tests" name="AccountInfo(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Com.Cen.TestCases.accountInfo">
+        <methods>
+          <include name="last_Name_numeric"/>
+          <include name="preferred_Language_select"/>
+          <include name="click_UserAdmin"/>
+          <include name="setUp"/>
+          <include name="first_Name_Alphabet"/>
+          <include name="click_Usermenu"/>
+          <include name="first_Name_SpcialCharacter"/>
+          <include name="test_clearButton"/>
+          <include name="test_VerifyContentTestResult"/>
+          <include name="last_Name_Special"/>
+          <include name="user_Type_Select"/>
+          <include name="reset_Button_working"/>
+          <include name="expert_Tier_Enter"/>
+          <include name="save_Button_InActive"/>
+          <include name="test_SearchWithID"/>
+          <include name="email_ReadOnly"/>
+          <include name="middle_Name_SpecialCharacter"/>
+          <include name="middle_Name_Alphabet"/>
+          <include name="last_Name_Required"/>
+          <include name="first_Name_EditableOrNot"/>
+          <include name="test_searchWithEmailId"/>
+          <include name="test_clickOnProfileOverviewDropdown"/>
+          <include name="noetic_Button"/>
+          <include name="csr_Review_Select"/>
+          <include name="display_Name_editable"/>
+          <include name="voice_Pitch_Select"/>
+          <include name="hourly_Rate_Enter"/>
+          <include name="click_AccountInfo"/>
+          <include name="test_SearchWithcompleteName"/>
+          <include name="test_searchwithSpecialSymbaol"/>
+          <include name="first_Name_RequireField"/>
+          <include name="test_Search"/>
+          <include name="account_Info_Open"/>
+          <include name="record_Save_OrNot"/>
+          <include name="test_SearchFieldEditable"/>
+          <include name="test_SearchDetails"/>
+        </methods>
+      </class> <!-- Com.Cen.TestCases.accountInfo -->
+      <class name="Com.Cen.TestCases.addressInfo">
+        <methods>
+          <include name="test_searchWithEmailId"/>
+          <include name="click_HamburgarMenu"/>
+          <include name="click_UserAdmin"/>
+          <include name="test_clickOnProfileOverviewDropdown"/>
+          <include name="setUp"/>
+          <include name="click_Usermenu"/>
+          <include name="test_clearButton"/>
+          <include name="test_VerifyContentTestResult"/>
+          <include name="login_With_Invalid"/>
+          <include name="test_SearchWithcompleteName"/>
+          <include name="test_SearchWithID"/>
+          <include name="test_searchwithSpecialSymbaol"/>
+          <include name="quit"/>
+          <include name="check_TimeZone"/>
+          <include name="select_Country"/>
+          <include name="test_Search"/>
+          <include name="Check_Save_Button"/>
+          <include name="verify_Record_Save"/>
+          <include name="test_SearchFieldEditable"/>
+          <include name="test_SearchDetails"/>
+        </methods>
+      </class> <!-- Com.Cen.TestCases.addressInfo -->
+    </classes>
+  </test> <!-- AccountInfo(failed) -->
+</suite> <!-- Failed suite [CEN User Admin] -->

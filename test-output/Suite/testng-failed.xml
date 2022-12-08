@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Com.Cen.TestCases.commonTest">
+        <methods>
+          <include name="test_searchWithEmailId"/>
+          <include name="click_HamburgarMenu"/>
+          <include name="click_UserAdmin"/>
+          <include name="test_SearchFieldEditable"/>
+          <include name="setUp"/>
+          <include name="click_Usermenu"/>
+          <include name="test_clearButton"/>
+          <include name="test_VerifyContentTestResult"/>
+          <include name="login_With_Invalid"/>
+          <include name="test_SearchWithID"/>
+          <include name="test_SearchWithcompleteName"/>
+          <include name="test_searchwithSpecialSymbaol"/>
+          <include name="test_SearchDetails"/>
+          <include name="test_clickOnProfileOverviewDropdown"/>
+          <include name="test_profileOverviewContent"/>
+          <include name="verify_invalidEmail"/>
+          <include name="test_Search"/>
+        </methods>
+      </class> <!-- Com.Cen.TestCases.commonTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
