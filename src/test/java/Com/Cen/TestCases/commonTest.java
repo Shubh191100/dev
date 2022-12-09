@@ -12,7 +12,7 @@ import Com.Cen.pageObject.Movie;
 public class commonTest {
 
 	public static WebDriver driver;
-	public String imdbReleaseDate, wikiReleaseDate;
+	public String imdbReleaseDate, wikiReleaseDate, imdbReleaseCountry, wikiReleaseCountry;
 	public int delay = 5000;
 
 	@BeforeClass // TestNG Notations
@@ -37,7 +37,9 @@ public class commonTest {
 		js.executeScript("window.scrollBy(0,6500)", "");
 		Thread.sleep(delay);
 		imdbReleaseDate = mname.releaseDateIMDB.getText();
-		System.out.println("IMDB - Pushpa movie Release date = " + imdbReleaseDate);
+		imdbReleaseCountry = mname.countryIMDB.getText();
+		System.out.println(
+				"IMDB - Pushpa movie Release date = " + imdbReleaseDate + " and Release Country = " + imdbReleaseCountry);
 
 		// Navigate to wikipedia website
 		driver.get("https://en.wikipedia.org/wiki/Main_Page");
@@ -51,18 +53,29 @@ public class commonTest {
 		js.executeScript("window.scrollBy(0,500)", "");
 		Thread.sleep(delay);
 		wikiReleaseDate = mname.releaseDateWIKI.getText();
-		System.out.println("Wikipedia - Pushpa movie Release date = " + wikiReleaseDate);
+		wikiReleaseCountry = mname.countryWIKI.getText();
+		System.out.println("Wikipedia - Pushpa movie Release date = " + wikiReleaseDate + " and Release Country = " + wikiReleaseCountry);
 
 	}
 
 	// @BeforeClass
 	@Test(priority = 1)
-	public void imdb_Wiki_Compare() throws InterruptedException {
+	public void imdb_Wiki_Compare_Date() throws InterruptedException {
 
 		SoftAssert assertion = new SoftAssert();
 		assertion.assertEquals(imdbReleaseDate, wikiReleaseDate);
 		assertion.assertAll();
+		
+	}
+
+	// @BeforeClass
+	@Test(priority = 2)
+	public void imdb_Wiki_Compare_Country() throws InterruptedException {
+
+		SoftAssert assertion = new SoftAssert();
+		assertion.assertEquals(imdbReleaseCountry, wikiReleaseCountry);
+		assertion.assertAll();
 		driver.quit();
 	}
-   
+
 }

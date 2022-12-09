@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-18T20:41:19 IST" name="testSuite" finished-at="2022-11-18T20:42:17 IST" duration-ms="57962">
+  <suite started-at="2022-12-09T14:41:18 IST" name="testSuite" finished-at="2022-12-09T14:42:22 IST" duration-ms="63417">
     <groups>
     </groups>
-    <test started-at="2022-11-18T20:41:19 IST" name="UserModule" finished-at="2022-11-18T20:42:17 IST" duration-ms="57962">
+    <test started-at="2022-12-09T14:41:18 IST" name="UserModule" finished-at="2022-12-09T14:42:22 IST" duration-ms="63417">
       <class name="Com.Cen.TestCases.commonTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Com.Cen.TestCases.commonTest@67f639d3]" started-at="2022-11-18T20:41:19 IST" name="setUp" finished-at="2022-11-18T20:42:17 IST" duration-ms="57876" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Com.Cen.TestCases.commonTest@6253c26]" started-at="2022-12-09T14:41:18 IST" name="setUp" finished-at="2022-12-09T14:42:21 IST" duration-ms="62727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="imdb_Wiki_Compare()[pri:1, instance:Com.Cen.TestCases.commonTest@67f639d3]" started-at="2022-11-18T20:42:17 IST" name="imdb_Wiki_Compare" finished-at="2022-11-18T20:42:17 IST" duration-ms="17" status="FAIL">
+        <test-method signature="imdb_Wiki_Compare_Date()[pri:1, instance:Com.Cen.TestCases.commonTest@6253c26]" started-at="2022-12-09T14:42:21 IST" name="imdb_Wiki_Compare_Date" finished-at="2022-12-09T14:42:21 IST" duration-ms="24" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -22,7 +22,7 @@ expected [17 December 2021] but found [December 17, 2021 (United States)]]]>
 expected [17 December 2021] but found [December 17, 2021 (United States)]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at Com.Cen.TestCases.commonTest.imdb_Wiki_Compare(commonTest.java:64)
+at Com.Cen.TestCases.commonTest.imdb_Wiki_Compare_Date(commonTest.java:68)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,7 +51,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- imdb_Wiki_Compare -->
+        </test-method> <!-- imdb_Wiki_Compare_Date -->
+        <test-method signature="imdb_Wiki_Compare_Country()[pri:2, instance:Com.Cen.TestCases.commonTest@6253c26]" started-at="2022-12-09T14:42:21 IST" name="imdb_Wiki_Compare_Country" finished-at="2022-12-09T14:42:22 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imdb_Wiki_Compare_Country -->
       </class> <!-- Com.Cen.TestCases.commonTest -->
     </test> <!-- UserModule -->
   </suite> <!-- testSuite -->

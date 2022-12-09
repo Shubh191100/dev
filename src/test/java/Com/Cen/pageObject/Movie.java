@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 // class for User admin Login
 public class Movie {
 	// Default constructor for initialization of object at run time
-	public static  WebDriver driver;
+	public static WebDriver driver;
 
 	public int delay = 5000;
 
@@ -39,6 +39,11 @@ public class Movie {
 	@CacheLookup
 	public WebElement releaseDateIMDB;
 
+	// WebElement for country where movie is released (IMDB)
+	@FindBy(xpath = "//body/div[@id='__next']/main[1]/div[1]/section[1]/div[1]/section[1]/div[1]/div[1]/section[11]/div[2]/ul[1]/li[2]/div[1]/ul[1]/li[1]/a[1]")
+	@CacheLookup
+	public WebElement countryIMDB;
+
 	// WebElement for search movie name (WIKI)
 	@FindBy(xpath = "//input[@id='searchInput']")
 	@CacheLookup
@@ -53,5 +58,10 @@ public class Movie {
 	@FindBy(xpath = "//tbody/tr[12]/td[1]/div[1]")
 	@CacheLookup
 	public WebElement releaseDateWIKI;
+
+	// WebElement for country where movie is released (WIKI)
+	@FindBy(xpath = "//td[contains(text(),'India')]")
+	@CacheLookup
+	public WebElement countryWIKI;
 
 }
