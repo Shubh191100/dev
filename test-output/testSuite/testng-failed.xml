@@ -6,7 +6,7 @@
       <class name="Com.Cen.TestCases.commonTest">
         <methods>
           <include name="setUp"/>
-          <include name="imdb_Wiki_Compare"/>
+          <include name="imdb_Wiki_Compare_Date"/>
         </methods>
       </class> <!-- Com.Cen.TestCases.commonTest -->
     </classes>
